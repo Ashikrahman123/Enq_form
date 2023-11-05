@@ -38,13 +38,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $mail->isSMTP();
             $mail->Host       = 'smtp.gmail.com';
             $mail->SMTPAuth   = true;
-            $mail->Username   = 'ashikr142@gmail.com'; // Your Gmail address
-            $mail->Password   = 'xmvjpffixoewnwax'; // Your Gmail password
+            $mail->Username   = ''; // Your Gmail address
+            $mail->Password   = ''; // Your Gmail password ( or use app passwords on google )
             $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS; // or PHPMailer::ENCRYPTION_SSL
             $mail->Port       = 587; // TCP port to connect to
 
             // Recipients
-            $mail->setFrom('ashikr142@gmail.com', 'Ashik Rahman');
+            $mail->setFrom('', 'Your Name');
             $mail->addAddress($email, $name); // Add a recipient
 
             // Content
